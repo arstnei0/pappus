@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The web app of pappus.",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "npx vite",
+    "build": "npx vite build"
   },
   "license": "MIT",
   "dependencies": {
