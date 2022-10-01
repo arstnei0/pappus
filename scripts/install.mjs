@@ -16,4 +16,4 @@ console.log('Start installing all packages...');
 const webOut = execSync('npm i', {
     cwd: resolve(cwd, 'packages/web'),
 });
-console.log(webOut);
+console.log(webOut.toString());
