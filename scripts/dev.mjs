@@ -4,14 +4,14 @@ import { resolve } from 'path';
 const cwd  = process.cwd();
 
 // Start api dev process
-const api = spawn('pnpm', ['run', 'dev'], {
+const api = spawn('npm', ['run', 'dev'], {
     cwd: resolve(cwd, 'packages/api'),
 });
 api.stdout.pipe(process.stdout);
 api.stderr.pipe(process.stderr);
 
 // Start web pages dev process
-const web = spawn('pnpm', ['run', 'dev'], {
+const web = spawn('npm', ['run', 'dev'], {
     cwd: resolve(cwd, 'packages/web'),
 });
 web.stdout.pipe(process.stdout);
