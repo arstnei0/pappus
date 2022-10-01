@@ -1,5 +1,4 @@
 tasks:
-  - name: start web app development
-    before: cd packages/web
-    init: pnpm i
-    command: pnpm run dev
+  - name: start app development
+    init: npm i
+    command: npm run dev

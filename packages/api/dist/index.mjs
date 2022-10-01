@@ -1,5 +1,1 @@
-// src/index.ts
-var a = 1;
-export {
-  a
-};
+var o=1;export{o as a};
