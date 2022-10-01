@@ -1,5 +1,5 @@
 {
-  "name": "pappus-web",
+  "name": "@pappus/web",
   "version": "1.0.0",
   "description": "The web app of pappus.",
   "scripts": {

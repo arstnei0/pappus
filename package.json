@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "An open source P2P chatting web application.",
   "scripts": {
-    
+    "build": "node ./scripts/build.mjs",
+    "dev": "node ./scripts/dev.mjs",
+    "install": "node ./scripts/install.mjs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
