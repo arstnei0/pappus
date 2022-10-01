@@ -1,0 +1,5 @@
+tasks:
+  - name: start web app development
+    before: cd packages/web
+    init: pnpm i
+    command: pnpm run dev

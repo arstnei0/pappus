@@ -1,0 +1,9 @@
+{
+  "name": "pappus",
+  "version": "1.0.0",
+  "description": "An open source P2P chatting web application.",
+  "scripts": {
+    
+  },
+  "license": "MIT"
+}
