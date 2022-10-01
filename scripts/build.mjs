@@ -1,0 +1,18 @@
+import { spawn } from 'child_process';
+import { resolve } from 'path';
+
+const cwd  = process.cwd();
+
+// Start api build process
+const api = spawn('pnpm', ['run', 'build'], {
+    cwd: resolve(cwd, 'packages/api'),
+});
+api.stdout.pipe(process.stdout);
+api.stderr.pipe(process.stderr);
+
+// Start web pages build process
+const web = spawn('pnpm', ['run', 'build'], {
+    cwd: resolve(cwd, 'packages/web'),
+});
+web.stdout.pipe(process.stdout);
+web.stderr.pipe(process.stderr);
