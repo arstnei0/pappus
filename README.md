@@ -1,2 +1,2 @@
-# pappus
-an open source P2P chatting web app.
+<h1 align="center">Pappus</h1>
+<img src="https://pappus.ga/logo.png">
