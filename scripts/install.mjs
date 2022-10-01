@@ -1,20 +1,23 @@
-import { spawn } from 'child_process';
+import { exec } from 'child_process';
 import { resolve } from 'path';
+import { stderr } from 'process';
 
 const cwd  = process.cwd();
 
 console.log('Start installing all packages...');
 
 // Install api depenencies
-const api = spawn('npm', ['i'], {
+exec('npm i', {
     cwd: resolve(cwd, 'packages/api'),
+}, (err, stdout, stderr) => {
+    if (err) throw err;
+    console.log(stdout);
 });
-api.stdout.pipe(process.stdout);
-api.stderr.pipe(process.stderr);
 
 // Install web dependencies
-const web = spawn('npm', ['i'], {
+exec('npm i', {
     cwd: resolve(cwd, 'packages/web'),
+}, (err, stdout, stderr) => {
+    if (err) throw err;
+    console.log(stdout);
 });
-web.stdout.pipe(process.stdout);
-web.stderr.pipe(process.stderr);
