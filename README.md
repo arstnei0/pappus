@@ -4,6 +4,8 @@
 ## About this project
 The objective of this project is to build *an online P2P chatting web application*. The name of the app is **Pappus**, which means the part of an individual floret, that surrounds the base of the corolla tube in flower in Asteraceae.
 
+Actually, my original wish is to make an alternative of Discord, which will have better safety and privacy than Discord.
+
 ## Features I hope pappus to have:
  - **Focus on privacy**: everything except user matching server, and the message receiving server when the user is not online (These must also be customizable), is on users' browser.
  - **100% Encryption**: The connection between the users will be encrypted by using the Public-key Cryptography. The keys are generated on the users' browser. The only way of identification is the keys. No passwords.
