@@ -1,0 +1,17 @@
+name: deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ${{ matrix.os }}
+    strategy: 
+      matrix: 
+        node_version: ['16.17.1']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps: 
+    - name: deploy
+      run: npm run deploy
