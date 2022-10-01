@@ -3,6 +3,8 @@ import { resolve } from 'path';
 
 const cwd  = process.cwd();
 
+console.log('Start installing all packages...');
+
 // Install api depenencies
 const api = spawn('npm', ['i'], {
     cwd: resolve(cwd, 'packages/api'),
