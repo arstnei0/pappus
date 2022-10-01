@@ -1,1 +1,5 @@
-var o=1;export{o as a};
+// src/index.ts
+var a = 1;
+export {
+  a
+};
